@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	
+	<PropertyGroup>
+		<TargetFramework>netcoreapp1.1</TargetFramework>
+	</PropertyGroup>
+	
+	<ItemGroup>
+        <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
+    </ItemGroup>
+	
+	<ItemGroup>
+	  <Folder Include="DbContexts\" />
+	  <Folder Include="DataModels\" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <PackageReference Include="NLog.Extensions.Logging" Version="1.0.0-rtm-beta5" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Design" Version="1.1.2" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="1.1.2" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="1.1.2" />
+	  <PackageReference Include="AutoMapper" Version="6.1.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\CasperInc.MainSite.Service.Models\CasperInc.MainSite.Service.Models.csproj" />
+	</ItemGroup>
+</Project>
